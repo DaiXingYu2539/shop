@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,shop-order,thymeleaf,redis,mq
+      name: application
+
+  datasource1:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/shop
+    aliaes: db1
+
+  datasource2:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/shop_01
+    aliaes: db2
+#    rabbitmq:
+#      listener:
+#        simple:
+#          acknowledge-mode: manual

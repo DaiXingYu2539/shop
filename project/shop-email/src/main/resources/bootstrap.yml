@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,shop-email,mq,log
+      name: application
+  rabbitmq:
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+
+  ##POP3/SMTP :wtcqgeubjvpojeff

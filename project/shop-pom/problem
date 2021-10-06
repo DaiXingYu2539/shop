@@ -1,0 +1,17 @@
+当使用网关访问时 静态资源是在网关的地址下去寻找静态资源
+
+表单验证 ： validform
+日期控件： my97datepicker
+webupload：图片上传
+FastDFS: 分布式文件储存系统
+  流程： 用户->浏览器->文件上传接口->分布式文件储存系统
+    查看的时候 用户直接访问 分布式文件储存系统
+
+https://blog.csdn.net/danielzhou888/article/details/72861097
+
+isof -i：port :查看端口是否被占用
+
+日志
+Logging是spring中唯一强制的外部依赖，spring中默认使用的日志是commons-logging，简称JCL，这里说的强制性，是因为在spring-core这个模块中引入了该依赖。
+不过，引入了该依赖，也无需做任何其他的配置，它是日志门面，它内部会有自己的算法去找日志门面的实现类，比如log4j,如果说没有引入其他日志依赖，
+它默认就会去找JDK自带的java.util.logging简称jul作为其日志实现类，所以说用起来还是赏心悦目的！

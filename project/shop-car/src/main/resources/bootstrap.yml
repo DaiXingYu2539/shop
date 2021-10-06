@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,shop-car,redis,log,datasource,thymeleaf
+      name: application
+
+mybatis-plus:
+  type-aliases-package: com.qf
+  mapper-locations: classpath:mapper/*.xml

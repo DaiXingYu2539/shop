@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: zuul,eureka-client,shop-sso,thymeleaf,mq,redis
+      name: application

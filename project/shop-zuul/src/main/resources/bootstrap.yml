@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: zuul,eureka-client,redis
+      name: application
+#zuul:
+#  sensitive-headers:
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+

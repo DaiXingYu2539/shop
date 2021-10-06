@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,shop-back,thymeleaf
+      name: application
+logging:
+  level:
+    com.qf.controller:  debug

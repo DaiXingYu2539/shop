@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: shop-goods,eureka-client,datasource,log,mq,redis
+      name: application
+mybatis-plus:
+  type-aliases-package: com.qf.entity
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: shop-search,mq,eureka-client
+      name: application
+  rabbitmq:
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+logging:
+  level:
+    com.qf: debug
+
+
+
