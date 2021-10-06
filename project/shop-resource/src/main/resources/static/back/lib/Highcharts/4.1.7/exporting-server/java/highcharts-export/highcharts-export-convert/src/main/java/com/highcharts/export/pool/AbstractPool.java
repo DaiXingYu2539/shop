@@ -1,6 +1,11 @@
 package com.highcharts.export.pool;
 
 import com.highcharts.export.util.TempDir;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.IOFileFilter;
+import org.apache.log4j.Logger;
+import org.springframework.scheduling.annotation.Scheduled;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,11 +16,6 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-
-import org.apache.log4j.Logger;
-import org.springframework.scheduling.annotation.Scheduled;
 
 public abstract class AbstractPool<T> implements ObjectPool<T> {
 

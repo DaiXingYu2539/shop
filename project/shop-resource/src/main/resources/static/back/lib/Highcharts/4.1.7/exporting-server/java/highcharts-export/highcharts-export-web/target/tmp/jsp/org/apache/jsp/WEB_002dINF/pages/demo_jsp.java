@@ -1,7 +1,11 @@
 package org.apache.jsp.WEB_002dINF.pages;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.*;
 
 public final class demo_jsp extends org.apache.jasper.runtime.HttpJspBase

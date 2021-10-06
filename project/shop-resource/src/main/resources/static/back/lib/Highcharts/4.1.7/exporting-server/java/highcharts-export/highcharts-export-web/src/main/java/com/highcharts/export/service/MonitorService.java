@@ -4,9 +4,10 @@
  */
 package com.highcharts.export.service;
 
+import org.springframework.stereotype.Service;
+
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
-import org.springframework.stereotype.Service;
 
 /**
  *

@@ -1,28 +1,21 @@
 package com.highcharts.export.pool;
 
-import java.nio.file.*;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.annotation.PostConstruct;
-
-import org.apache.log4j.Logger;
-
 import com.highcharts.export.server.Server;
 import com.highcharts.export.server.ServerState;
 import com.highcharts.export.util.TempDir;
+import org.apache.commons.io.IOUtils;
+import org.apache.log4j.Logger;
+import org.springframework.core.io.ClassPathResource;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import javax.annotation.PostConstruct;
+import java.io.*;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.TreeMap;
-
-import org.apache.commons.io.IOUtils;
-import org.springframework.core.io.ClassPathResource;
 
 public class ServerObjectFactory implements ObjectFactory<Server> {
 

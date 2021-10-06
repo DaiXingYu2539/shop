@@ -9,6 +9,16 @@
  */
 package com.highcharts.export.converter;
 
+import com.google.gson.Gson;
+import com.highcharts.export.pool.BlockingQueuePool;
+import com.highcharts.export.pool.PoolException;
+import com.highcharts.export.server.Server;
+import com.highcharts.export.util.MimeType;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.SocketTimeoutException;
@@ -16,17 +26,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeoutException;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.google.gson.Gson;
-import com.highcharts.export.pool.PoolException;
-import com.highcharts.export.pool.BlockingQueuePool;
-import com.highcharts.export.server.Server;
-import com.highcharts.export.util.MimeType;
 
 @Service("svgConverter")
 public class SVGConverter {
