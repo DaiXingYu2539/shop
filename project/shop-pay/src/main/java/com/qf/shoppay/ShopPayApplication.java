@@ -13,6 +13,7 @@ public class ShopPayApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ShopPayApplication.class, args);
+        Integer a = new Integer(2);
     }
 
 }
